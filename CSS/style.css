@@ -2,8 +2,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body{
     height: 100%;
+}
+
+header{
+    color: white;
+    height: 70%;
+    background-color: #1F2937;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 220px;
+}
+
+header nav .logo{
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+header nav ul a{
+    size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header .sign-in-area{
+    padding: 100px 220px;
+    display: flex;
+    align-items: center;
+}
+
+header .text-container{
+    width: calc(50%);
+}
+
+header h1{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+header p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+header .custom-button{
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #3882F6;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin-top: 20px;
+}
+
+header .sign-in-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #656b76;
+    width: calc(50%);
+    margin-left: 80px;
+    height: 250px;
 }
