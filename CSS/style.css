@@ -11,7 +11,7 @@ html, body{
 
 header{
     color: white;
-    height: 70%;
+    height: 70vh;
     background-color: #1F2937;
 }
 
@@ -19,7 +19,8 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 220px;
+    padding: 20px 15vw;
+    flex-wrap: wrap;
 }
 
 header nav .logo{
@@ -43,9 +44,10 @@ header nav li{
 }
 
 header .sign-in-area{
-    padding: 100px 220px;
+    padding: 100px 10%;
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 
 header .text-container{
@@ -81,4 +83,134 @@ header .sign-in-img{
     width: calc(50%);
     margin-left: 80px;
     height: 250px;
+}
+
+.info-section{
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.info-section h2{
+    padding-top: 30px;
+    width: 100%;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.info-section .imgs-container{
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imgs-container .img-block{
+    width: 25%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-block .info-img{
+    height: 170px;
+    width: 170px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border: #3882F6 4px solid;
+}
+
+.imgs-container p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #585a5f;
+}
+
+@media (max-width: 1020px) {
+    .imgs-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 10%;
+    }
+
+    .imgs-container .img-block {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .img-block .info-img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    header nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    header nav ul{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav li{
+        margin-left: 0;
+    }
+
+    header .sign-in-area{
+        flex-direction: column;
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    header .text-container,
+    header .sign-in-img{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    header .sign-in-img {
+        height: auto; 
+        margin-top: 30px;
+    }
+
+    .info-section{
+        height: auto;
+        padding: 40px 5%
+    }
+
+    .info-section h2{
+        font-size: 28px;
+    }
+
+    .info-section .imgs-container{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .imgs-container .img-block{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .img-block .info-img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .imgs-container p{
+        font-size: 16px;
+    }
 }
