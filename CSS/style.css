@@ -131,7 +131,39 @@ header .sign-in-img{
     color: #585a5f;
 }
 
-@media (max-width: 1020px) {
+.testimonial{
+    background-color: #E5E7EB;
+}
+
+.testimonial .testimonial-container{
+    padding: 100px 25%;
+}
+
+.testimonial h2{
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.testimonial p{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+}
+
+.call .call-container{
+    margin: 100px 25%;
+}
+
+.call .call-text{
+    width: 70%;
+}
+
+.call button{
+    width: 30%;
+}
+@media (max-width: 1030px) {
     .imgs-container {
         flex-wrap: wrap;
         justify-content: center;
@@ -145,8 +177,8 @@ header .sign-in-img{
     }
 
     .img-block .info-img {
-        width: 140px;
-        height: 140px;
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -156,6 +188,7 @@ header .sign-in-img{
         flex-direction: column;
         align-items: flex-start;
         padding: 20px;
+        display: none;
     }
 
     header nav ul{
