@@ -152,17 +152,75 @@ header .sign-in-img{
     text-align: right;
 }
 
+.call{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
 .call .call-container{
-    margin: 100px 25%;
+    display: flex;
+    justify-content: center;
+    margin: 100px 15%;
+    width: 90%;
+    padding: 50px 100px;
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: white;
 }
 
 .call .call-text{
-    width: 70%;
+    width: 80%;
 }
 
-.call button{
-    width: 30%;
+.call-text h2{
+    font-size: 24px;
+    color: #F9FAF8;
 }
+
+.call-text p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.call .button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.call .button-container button{
+    background-color: #3882F6;
+    width: 75%;
+    height: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.button-container button a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background-color: #1F2937;
+}
+
+footer .p-container{
+    display: flex;
+    padding: 50px 20%;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 @media (max-width: 1030px) {
     .imgs-container {
         flex-wrap: wrap;
@@ -215,9 +273,13 @@ header .sign-in-img{
     }
 
     header .sign-in-img {
-        height: auto; 
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
         margin-top: 30px;
     }
+
 
     .info-section{
         height: auto;
@@ -245,5 +307,17 @@ header .sign-in-img{
 
     .imgs-container p{
         font-size: 16px;
+    }
+
+    .call .call-container{
+        height: auto;
+        margin: 100px 2%;
+        flex-direction: column;
+    }
+
+    .call .button-container{
+        margin-top: 10px;
+        display: block;
+        width: 50%;
     }
 }
